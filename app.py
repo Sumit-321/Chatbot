@@ -4,7 +4,7 @@ import os
 import sentence_transformers
 import torch
 
-with open(file= os.path.join(os.getcwd(), "document", "chatbot_input_data.txt"), mode= "r", encoding= "utf-8") as file:
+with open(file= os.path.join(os.getcwd(), "chatbot_input_data.txt"), mode= "r", encoding= "utf-8") as file:
     text_data= file.read()
 
 model = sentence_transformers.SentenceTransformer(model_name_or_path= "all-MiniLM-L6-v2")
@@ -19,7 +19,7 @@ flask_cors.CORS(app)
 
 @app.route("/", methods=["GET", "POST"])
 def home():
-    return flask.render_template("index.html")
+    return "", 200
     
 @app.route("/chat", methods=["POST"])
 def chat():
@@ -73,5 +73,6 @@ if __name__ == "__main__":
 # Paste the same chatbot code
 
 # Click "Run"
+
 
 # Enable the web server, get a URL like https://chatbot.username.repl.co
