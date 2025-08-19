@@ -49,30 +49,3 @@ if __name__ == "__main__":
     app.run(debug= True, use_reloader= False, threaded= True)
 
 
-
-# ✅ Option A: Render.com (Free Plan)
-
-# Create a free account
-
-# Create a new "Web Service"
-
-# Connect your GitHub repo or paste code manually
-
-# Set:
-
-# Runtime = Python
-
-# Start command = python chatbot.py (or your file)
-
-# It gives you a public URL like https://your-bot.onrender.com
-
-# ✅ Option B: Replit.com
-
-# Create a Replit project (Python + Flask)
-
-# Paste the same chatbot code
-
-# Click "Run"
-
-
-# Enable the web server, get a URL like https://chatbot.username.repl.co
